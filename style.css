@@ -3,13 +3,13 @@
 :root {
   --c-red: #cc0000;
   --c-dark-red: #940000;
-  --c-black: #1a1a1c;
-  --c-dark: #222226;
-  --c-darker: #2a2a30;
+  --c-black: #08080a;
+  --c-dark: #0f0f12;
+  --c-darker: #16161a;
   --c-white: #ffffff;
-  --c-gray: #bbbbbb;
+  --c-gray: #b0b0b0;
   --c-light-gray: #e8e8e8;
-  --c-border: rgba(255, 255, 255, 0.15);
+  --c-border: rgba(255, 255, 255, 0.1);
   
   --font-display: 'Oswald', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -31,8 +31,10 @@ html {
 
 body {
   font-family: var(--font-body);
+  color: var(--c-gray);
   background-color: var(--c-black);
-  color: var(--c-light-gray);
+  background-image: radial-gradient(rgba(204, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 30px 30px;
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -171,7 +173,7 @@ body::after {
 }
 
 .site-header.is-scrolled {
-  background-color: rgba(26, 26, 28, 0.95);
+  background-color: rgba(10, 10, 12, 0.95);
   backdrop-filter: blur(10px);
   padding: 1rem 0;
   border-bottom: 1px solid var(--c-border);
@@ -342,7 +344,7 @@ body::after {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(26,26,28,0.95) 0%, rgba(26,26,28,0.6) 100%);
+  background: linear-gradient(90deg, rgba(5,5,5,0.95) 0%, rgba(5,5,5,0.6) 100%);
   z-index: 2;
 }
 
@@ -541,11 +543,11 @@ body::after {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.8s var(--ease-out);
+  transition: opacity 0.8s var(--ease-out);
 }
 
 .image-wrapper:hover img {
-  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .image-overlay-box {
@@ -589,6 +591,12 @@ body::after {
   padding: 2rem;
   text-decoration: none;
   cursor: crosshair;
+  transition: all 0.4s ease;
+}
+
+.bento-card:hover {
+  border-color: rgba(204,0,0,0.5);
+  box-shadow: 0 0 20px rgba(204,0,0,0.15);
 }
 
 .bento-large {
@@ -612,10 +620,9 @@ body::after {
   z-index: 1;
 }
 
-.group:hover .bento-bg {
-  opacity: 0.8;
+.bento-card:hover .bento-bg {
+  opacity: 0.6;
   filter: grayscale(0%);
-  transform: scale(1.05);
 }
 
 .bento-content {
@@ -685,19 +692,23 @@ body::after {
   scroll-snap-align: center;
   overflow: hidden;
   border: 1px solid var(--c-border);
+  transition: border-color 0.3s ease;
+}
+
+.gallery-item:hover {
+  border-color: var(--c-red);
 }
 
 .gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.8s var(--ease-out);
+  transition: opacity 0.8s var(--ease-out);
   opacity: 0.7;
 }
 
-.group:hover img {
-  transform: scale(1.05);
-  opacity: 1;
+.gallery-item:hover img {
+  opacity: 0.8;
 }
 
 .gallery-caption {

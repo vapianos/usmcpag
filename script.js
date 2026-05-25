@@ -151,33 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ================= 3D TILT EFFECT =================
-  const tiltElements = document.querySelectorAll('.bento-card, .gallery-item');
-  
-  tiltElements.forEach(el => {
-    el.addEventListener('mousemove', (e) => {
-      const rect = el.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      
-      const xPct = x / rect.width;
-      const yPct = y / rect.height;
-      
-      const maxTilt = 5; // degrees
-      const tiltX = (0.5 - yPct) * maxTilt;
-      const tiltY = (xPct - 0.5) * maxTilt;
-      
-      el.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.02, 1.02, 1.02)`;
-      el.style.transition = 'transform 0.1s ease-out';
-      el.style.zIndex = '10';
-    });
-    
-    el.addEventListener('mouseleave', () => {
-      el.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
-      el.style.transition = 'transform 0.5s var(--ease-out)';
-      el.style.zIndex = '1';
-    });
-  });
+  // 3D Tilt removed as per user request
 
   // ================= CYBER CANVAS PARTICLES =================
   const canvas = document.getElementById('cyber-canvas');
