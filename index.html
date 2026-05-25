@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USMC CIB | Criminal Investigation Battalion</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="icon" type="image/png" href="images/cib_logo.png">
+</head>
+<body class="loading">
+
+  <!-- ================= LOADER ================= -->
+  <div class="loader-overlay" id="loader">
+    <div class="loader-content">
+      <img src="images/cib_logo.png" alt="CIB Logo" class="loader-logo">
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+      <div class="loader-text" id="loader-text">ESTABLECIENDO CONEXIÓN SEGURA...</div>
+    </div>
+  </div>
+
+  <!-- ================= TACTICAL HUD ELEMENTS ================= -->
+  <div class="hud-element hud-top-left"></div>
+  <div class="hud-element hud-top-right"></div>
+  <div class="hud-element hud-bottom-left"></div>
+  <div class="hud-element hud-bottom-right"></div>
+  <div class="hud-grid-overlay"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="header">
+    <div class="container site-header__inner">
+      <div class="brand">
+        <div class="brand__logo glow-hover">
+          <img src="images/cib_logo.png" alt="CIB Logo">
+        </div>
+        <div class="brand__text">
+          <span class="brand__title">MARINES</span>
+          <span class="brand__subtitle">CRIMINAL INVESTIGATION BATTALION</span>
+        </div>
+      </div>
+      
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active"><span class="nav-num">01</span> INICIO</a>
+        <a href="#about" class="nav-link"><span class="nav-num">02</span> MISIÓN</a>
+        <a href="#capabilities" class="nav-link"><span class="nav-num">03</span> OPERACIONES</a>
+        <a href="#gallery" class="nav-link"><span class="nav-num">04</span> INTELIGENCIA</a>
+        <button class="btn btn--small pulse-glow" id="nav-apply-btn">POSTULARSE</button>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg parallax-bg" style="background-image: url('assets/images/hero-banner.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge reveal-fade">CLASIFICADO // USO OFICIAL</div>
+        <h1 class="reveal-text">
+          <span class="line">JUSTICIA A TRAVÉS</span>
+          <span class="line text-red">DE LA VERDAD.</span>
+        </h1>
+        <p class="hero-desc reveal-fade delay-1">
+          La principal agencia de investigación policial del Cuerpo de Marines de los Estados Unidos, brindando excelencia investigativa sin concesiones a nivel mundial.
+        </p>
+        <div class="hero-actions reveal-fade delay-2">
+          <button class="btn btn--primary cyber-btn" id="hero-apply-btn">
+            <span class="btn__text">ENVIAR SOLICITUD</span>
+            <span class="btn__icon">→</span>
+          </button>
+          <a href="#about" class="btn btn--outline">
+            <span class="btn__text">VER DIRECTIVAS</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-stats reveal-fade delay-3">
+        <div class="stat-item float-anim">
+          <div class="stat-num counter" data-target="150">0</div>
+          <div class="stat-label">Agentes Globales</div>
+        </div>
+        <div class="stat-item float-anim delay-1">
+          <div class="stat-num counter" data-target="42">0</div>
+          <div class="stat-label">Oficinas de Campo</div>
+        </div>
+        <div class="stat-item float-anim delay-2">
+          <div class="stat-num counter" data-target="98" data-suffix="%">0</div>
+          <div class="stat-label">Tasa de Condenas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SCROLL MARQUEE ================= -->
+  <div class="marquee-section">
+    <div class="marquee-content">
+      <span>CRIMINAL INVESTIGATION BATTALION</span>
+      <span class="marquee-dot"></span>
+      <span>SEMPER FIDELIS</span>
+      <span class="marquee-dot"></span>
+      <span>INVESTIGACIONES PENALES</span>
+      <span class="marquee-dot"></span>
+      <span>SERVICIOS DE PROTECCIÓN</span>
+      <span class="marquee-dot"></span>
+      <span>EXPLOTACIÓN FORENSE</span>
+      <span class="marquee-dot"></span>
+      <span>CRIMINAL INVESTIGATION BATTALION</span>
+      <span class="marquee-dot"></span>
+      <span>SEMPER FIDELIS</span>
+      <span class="marquee-dot"></span>
+    </div>
+  </div>
+
+  <main class="main-content">
+    
+    <!-- ================= ABOUT / MISSION ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="section-label reveal-up">02 // LA MISIÓN</div>
+            <h2 class="section-title reveal-up">CONOCE LA AMENAZA,<br><span class="text-red">INFORMA EL FUTURO.</span></h2>
+            <div class="about-paragraphs">
+              <p class="reveal-up delay-1">
+                Como el principal centro de investigación policial del Cuerpo de Marines, el Criminal Investigation Battalion (CIB) ofrece inteligencia operativa para informar a los comandantes, asegurar la justicia y permitir el éxito en los entornos operativos actuales y futuros.
+              </p>
+              <p class="reveal-up delay-2">
+                <strong>Conoce la amenaza, informa el futuro</strong> es la visión que encapsula la misión del CIB. En un panorama complejo y en constante evolución, el CIB proporciona capacidades investigativas y forenses críticas para asegurar que las fuerzas del mañana estén equipadas para mantener una ventaja decisiva contra cualquier adversario.
+              </p>
+            </div>
+            
+            <div class="values-list reveal-up delay-3">
+              <div class="value-item pulse-border">
+                <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+                <div>
+                  <h4>PERSONAS</h4>
+                  <p>Cuidar a nuestra gente impregna cada valor que defendemos.</p>
+                </div>
+              </div>
+              <div class="value-item pulse-border delay-1">
+                <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+                <div>
+                  <h4>RESPONSABILIDAD</h4>
+                  <p>Honramos nuestro compromiso compartido mutuo.</p>
+                </div>
+              </div>
+              <div class="value-item pulse-border delay-2">
+                <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+                <div>
+                  <h4>SERVICIO</h4>
+                  <p>Dedicados a servir a nuestra nación y al bien común.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-image reveal-scale">
+            <div class="image-wrapper hologram-effect">
+              <img src="assets/images/intelligence-center.jpg" alt="Centro de Operaciones CIB">
+              <div class="image-overlay-box">
+                <div class="box-title">QUANTICO, VA</div>
+                <div class="box-data">SEDE CENTRAL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BENTO GRID CAPABILITIES ================= -->
+    <section class="section section--dark" id="capabilities">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <div class="section-label">03 // OPERACIONES</div>
+          <h2 class="section-title">CAPACIDADES <span class="text-red">TÁCTICAS</span></h2>
+        </div>
+        
+        <div class="bento-grid">
+          <!-- Large Card 1 -->
+          <div class="bento-card bento-large reveal-up group cyber-glitch">
+            <img src="assets/images/cyber-ops.png" alt="Ciber Operaciones" class="bento-bg">
+            <div class="bento-content">
+              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+              <h3>FORENSE DIGITAL</h3>
+              <p>Explotación cibernética avanzada y recuperación de evidencia digital apoyando investigaciones complejas a nivel global.</p>
+            </div>
+          </div>
+          
+          <!-- Small Card 1 -->
+          <div class="bento-card reveal-up delay-1 group cyber-glitch">
+            <img src="assets/images/field-ops.png" alt="Operaciones de Campo" class="bento-bg">
+            <div class="bento-content">
+              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+              <h3>INVESTIGACIONES PENALES</h3>
+              <p>Investigación de delitos mayores dirigidos al personal y la propiedad.</p>
+            </div>
+          </div>
+          
+          <!-- Small Card 2 -->
+          <div class="bento-card reveal-up delay-2 group cyber-glitch">
+            <img src="assets/images/intelligence.png" alt="Servicios de Protección" class="bento-bg">
+            <div class="bento-content">
+              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+              <h3>SERVICIOS DE PROTECCIÓN</h3>
+              <p>Protección de alta amenaza para funcionarios a nivel mundial.</p>
+            </div>
+          </div>
+          
+          <!-- Wide Card -->
+          <div class="bento-card bento-wide reveal-up delay-3 group cyber-glitch">
+            <img src="assets/images/combat-training.jpg" alt="Entrenamiento Táctico" class="bento-bg" style="object-position: center 30%;">
+            <div class="bento-content">
+              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+              <h3>ENTRENAMIENTO ESPECIALIZADO</h3>
+              <p>Preparación operativa continua y entrenamiento táctico avanzado en la academia de élite del Criminal Investigation Battalion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MEDIA GALLERY (PARALLAX CAROUSEL) ================= -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-label">04 // INTELIGENCIA</div>
+          <h2 class="section-title">OPERACIONES DE <span class="text-red">CAMPO</span></h2>
+        </div>
+      </div>
+      
+      <div class="gallery-track-container reveal-up delay-1">
+        <div class="gallery-track">
+          <div class="gallery-item group cyber-glitch">
+            <img src="assets/images/field-training.jpg" alt="Entrenamiento de Campo">
+            <div class="gallery-caption">MANIOBRAS TÁCTICAS</div>
+          </div>
+          <div class="gallery-item group cyber-glitch">
+            <img src="assets/images/operations-center.jpg" alt="Centro de Operaciones">
+            <div class="gallery-caption">COMANDO Y CONTROL</div>
+          </div>
+          <div class="gallery-item group cyber-glitch">
+            <img src="assets/images/equipment.jpg" alt="Equipo">
+            <div class="gallery-caption">EQUIPO FORENSE</div>
+          </div>
+          <div class="gallery-item group cyber-glitch">
+            <img src="assets/images/training.png" alt="Entrenamiento">
+            <div class="gallery-caption">EVALUACIÓN DE AGENTES</div>
+          </div>
+          <div class="gallery-item group cyber-glitch">
+            <img src="assets/images/medals.jpg" alt="Medallas">
+            <div class="gallery-caption">HONOR Y VALOR</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LEADERSHIP ================= -->
+    <section class="section section--dark" id="leaders">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <div class="section-label">05 // MANDO</div>
+          <h2 class="section-title">CADENA DE <span class="text-red">MANDO</span></h2>
+        </div>
+        <div class="leadership-grid">
+          <div class="leader-profile reveal-up">
+            <div class="leader-image-wrap">
+              <img src="assets/images/leadership.jpg" alt="Gerard Lancaster" class="leader-img">
+              <div class="leader-overlay">
+                <img src="images/cib_logo.png" alt="Logo" class="leader-badge glow-anim">
+              </div>
+            </div>
+            <div class="leader-info">
+              <div class="leader-rank">SEGUNDO TENIENTE, USMC</div>
+              <h3 class="leader-name">GERARD LANCASTER</h3>
+              <div class="leader-role">Oficial al Mando, CIB</div>
+            </div>
+          </div>
+          
+          <div class="leader-profile reveal-up delay-2">
+            <div class="leader-image-wrap">
+              <img src="assets/images/hero-secondary.jpg" alt="Joseph Valbuena" class="leader-img">
+              <div class="leader-overlay">
+                <img src="images/cib_logo.png" alt="Logo" class="leader-badge glow-anim">
+              </div>
+            </div>
+            <div class="leader-info">
+              <div class="leader-rank">OFICIAL TÉCNICO, USMC</div>
+              <h3 class="leader-name">JOSEPH VALBUENA</h3>
+              <div class="leader-role">Oficial Ejecutivo, CIB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FULLSCREEN APPLICATION MODAL ================= -->
+  <div class="application-modal" id="app-modal">
+    <div class="modal-bg"></div>
+    
+    <!-- Animated Background Layer for Modal -->
+    <div class="bg-anim-layer">
+      <canvas id="cyber-canvas"></canvas>
+      <div class="cyber-radar"></div>
+      <div class="cyber-lines"></div>
+      <div class="floating-data glow-text" style="top: 15%; left: 5%;">TRK: 42.3948° N, 71.0589° W</div>
+      <div class="floating-data glow-text" style="bottom: 15%; right: 8%; color: rgba(255,0,0,0.8);">UPLINK ESTABLISHED...</div>
+      <div class="floating-data glow-text" style="top: 45%; right: 4%;">[ ENCRYPTED NODE ]</div>
+      <div class="floating-data glow-text" style="bottom: 25%; left: 6%;">SYNC RATE: 99.8%</div>
+    </div>
+
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      
+      <!-- Sidebar / Info Panel -->
+      <div class="modal-sidebar">
+        <img src="assets/images/field-training.jpg" alt="Field Training" class="modal-sidebar-img anim-pan-slow">
+        
+        <!-- Tactical HUD Elements -->
+        <div class="hud-scanning-line"></div>
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
+        <div class="hud-data-stream">
+          > SYS.INIT.994<br>
+          > SECURE_LINK_ESTABLISHED<br>
+          > AWAITING_INPUT...
+        </div>
+        
+        <div class="modal-sidebar-content">
+          <img src="images/cib_logo.png" alt="CIB Logo" class="modal-logo-pulse cyber-glitch-img">
+          <h2 class="cyber-glitch-text">PROGRAMA DE EVALUACIÓN CIB</h2>
+          <p>La principal agencia de investigación policial del Cuerpo de Marines de los Estados Unidos.</p>
+          
+          <div class="modal-sidebar-badges">
+            <div class="badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              ENCRIPTACIÓN SEGURA DE 256 BITS
+            </div>
+            <div class="badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              PORTAL OFICIAL USMC
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Form Area -->
+      <div class="modal-form-area">
+        <div class="modal-header">
+          <div class="modal-titles">
+            <h2>PROTOCOLO DE SOLICITUD</h2>
+            <p>COMPLETE TODOS LOS CAMPOS REQUERIDOS PARA INICIAR EL PROCESAMIENTO</p>
+          </div>
+        </div>
+        
+        <!-- Google Form Iframe -->
+        <div class="iframe-wrapper">
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe14fPfFyPc5xySicDrmed3u1GrbotNBCw4EmzhI0uH9CPTtQ/viewform?embedded=true" 
+            title="Formulario de Solicitud de Evaluación CIB"
+            loading="lazy">
+            Cargando…
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= CRISIS BANNERS ================= -->
+  <div class="crisis-banners">
+    <a href="#" class="crisis-banner group cyber-glitch">
+      <img src="assets/images/combat-training.jpg" alt="Crisis" class="crisis-bg">
+      <div class="crisis-content">
+        <h4>LÍNEA DE CRISIS MILITAR</h4>
+        <div class="phone">MARQUE 988 OPCIÓN 1</div>
+      </div>
+    </a>
+    <a href="#" class="crisis-banner group cyber-glitch">
+      <img src="assets/images/field-training.jpg" alt="OneSource" class="crisis-bg">
+      <div class="crisis-content">
+        <h4>MILITARY ONESOURCE</h4>
+        <div class="phone">1.800.342.9647</div>
+      </div>
+    </a>
+    <a href="#" class="crisis-banner group cyber-glitch">
+      <img src="assets/images/equipment.jpg" alt="Safe Helpline" class="crisis-bg">
+      <div class="crisis-content">
+        <h4>DOD SAFE HELPLINE</h4>
+        <div class="phone">877.955.5247</div>
+      </div>
+    </a>
+    <a href="#" class="crisis-banner group cyber-glitch">
+      <img src="assets/images/operations-center.jpg" alt="Eagle Eyes" class="crisis-bg">
+      <div class="crisis-content">
+        <h4>USMC EAGLE EYES</h4>
+        <div class="phone text-white">OBSERVA. REPORTA. PROTEGE.</div>
+      </div>
+    </a>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="images/cib_logo.png" alt="CIB Logo" class="footer-logo glow-hover">
+          <div class="footer-brand-text">
+            <h3>UNITED STATES MARINE CORPS</h3>
+            <p>CRIMINAL INVESTIGATION BATTALION</p>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>NAVEGACIÓN</h4>
+            <a href="#home">Inicio</a>
+            <a href="#about">Misión</a>
+            <a href="#capabilities">Operaciones</a>
+            <a href="#leaders">Mando</a>
+          </div>
+          <div class="footer-col">
+            <h4>RECURSOS</h4>
+            <a href="#">Contáctanos</a>
+            <a href="#">FOIA</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Ley No FEAR</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2026 Sitio Oficial del Cuerpo de Marines de EE. UU. Todos los derechos reservados.</p>
+        <p class="footer-tag">Semper Fidelis</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
