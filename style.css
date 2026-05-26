@@ -1501,47 +1501,159 @@ body::after {
 }
 
 @media (max-width: 768px) {
-  .section { padding: 4rem 0; }
+  .section { padding: 3rem 0; }
   .hero { padding-top: 80px; }
-  .hero-content h1 { font-size: 2.5rem; }
-  .stat-num { font-size: 2.5rem; }
+  .hero-content h1 { font-size: 2.2rem; }
+  .stat-num { font-size: 2rem; }
   
   .about-grid { grid-template-columns: 1fr; }
-  .bento-grid { grid-template-columns: 1fr; }
+  .bento-grid { grid-template-columns: 1fr; gap: 1rem; }
   .bento-large, .bento-wide { grid-column: span 1; }
-  .bento-card { padding: 1.5rem; }
+  .bento-card {
+    padding: 1.5rem;
+    min-height: 220px;
+  }
+  .bento-content {
+    transform: translateY(0) !important;
+  }
+  .bento-content p {
+    opacity: 1 !important;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  .bento-content h3 {
+    font-size: 1.3rem !important;
+  }
+  .bento-bg {
+    opacity: 0.5 !important;
+    filter: grayscale(0%) !important;
+  }
+  .bento-icon svg {
+    width: 24px;
+    height: 24px;
+  }
   .gallery-item { min-width: 280px; height: 400px; }
   
   .leadership-grid { gap: 2rem; }
   .leader-image-wrap { width: 100%; max-width: 320px; height: 350px; }
   
-  .crisis-banners { flex-direction: column; }
+  .crisis-banners { flex-direction: column; gap: 0; }
+  .crisis-banner {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 200px;
+    padding: 2.5rem 1.5rem !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .crisis-banner h4 {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.8rem !important;
+    letter-spacing: 2px;
+  }
+  .crisis-banner .phone {
+    font-size: 1.4rem !important;
+  }
+  .crisis-banner-bg {
+    opacity: 0.3 !important;
+  }
+
   .footer-main { flex-direction: column; }
   .footer-links { flex-direction: column; gap: 2rem; }
   .footer-bottom { flex-direction: column; text-align: center; gap: 1rem; }
   
+  /* ===== MODAL MOBILE REDESIGN ===== */
+  .application-modal {
+    align-items: flex-start;
+    padding: 0;
+  }
   .modal-content {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    width: 95%;
-    margin: 0 auto;
-    border-radius: 12px;
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    overflow: hidden;
   }
   .modal-sidebar {
+    display: flex !important;
+    flex-direction: row;
+    height: auto;
+    min-height: 120px;
+    max-height: 140px;
+    border-right: none;
+    border-bottom: 3px solid var(--c-red);
+  }
+  .modal-sidebar-img {
+    inset: -20% !important;
+    width: 140% !important;
+    height: 140% !important;
+  }
+  .modal-sidebar-content {
+    padding: 1.2rem 1.5rem !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 1rem;
+  }
+  .modal-sidebar-content img {
+    width: 55px !important;
+    height: 55px !important;
+    margin-bottom: 0 !important;
+  }
+  .sidebar-main-title {
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+  }
+  .sidebar-main-desc {
     display: none;
   }
+  .modal-sidebar-badges {
+    display: none !important;
+  }
+  .hud-scanning-line,
+  .hud-corner,
+  .sidebar-terminal {
+    display: none !important;
+  }
+  .modal-close {
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    z-index: 100;
+  }
   .modal-header {
-    padding: 1rem;
+    padding: 1rem 1.2rem;
   }
   .modal-titles h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .modal-titles p {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
-  .iframe-wrapper iframe { height: 900px; }
+  .modal-form-area {
+    flex: 1;
+    overflow-y: auto;
+  }
+  .iframe-wrapper {
+    flex: 1;
+    padding-bottom: 0 !important;
+  }
+  .iframe-wrapper iframe {
+    height: 100% !important;
+    min-height: 600px;
+  }
+  .bg-anim-layer,
+  .cyber-canvas,
+  .cyber-radar,
+  .cyber-lines,
+  .floating-data {
+    display: none !important;
+  }
 }
 
 
@@ -2007,14 +2119,19 @@ body::after {
   }
   .crisis-banner {
     width: 100%;
-    height: 250px !important;
-    padding: 2rem !important;
+    height: auto !important;
+    min-height: 180px;
+    padding: 2.5rem 1.5rem !important;
     border-right: none !important;
-    border-bottom: 2px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
   }
   .crisis-banner h4 {
-    font-size: 1.4rem !important;
-    margin-bottom: 1rem !important;
+    font-size: 1.2rem !important;
+    margin-bottom: 0.8rem !important;
+    letter-spacing: 2px;
+  }
+  .crisis-banner .phone {
+    font-size: 1.3rem !important;
   }
 }
 
