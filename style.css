@@ -282,6 +282,10 @@ body::after {
   cursor: pointer;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 /* ================= BUTTONS ================= */
 .btn {
   display: inline-flex;
@@ -1470,9 +1474,8 @@ body::after {
     padding-left: 0;
     padding-top: 2rem;
   }
-}
-
-@media (max-width: 768px) {
+  
+  /* Mobile Nav on Tablet and below */
   .nav-links { display: none; }
   .menu-toggle { display: block; }
   
@@ -1506,7 +1509,9 @@ body::after {
     border-bottom: 1px solid rgba(255,255,255,0.05);
     letter-spacing: 2px;
   }
-  
+}
+
+@media (max-width: 768px) {
   .section { padding: 4rem 0; }
   .hero { padding-top: 80px; }
   .hero-content h1 { font-size: 2.5rem; }
