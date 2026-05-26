@@ -1969,8 +1969,40 @@ body::after {
     width: 100%;
     box-sizing: border-box;
   }
+  .hero {
+    padding-top: 140px !important;
+  }
+  .hero-badge {
+    margin-bottom: 2.5rem !important;
+  }
+  .gallery-track-container {
+    overflow-x: hidden !important;
+    padding: 0 !important;
+  }
+  .gallery-track {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .gallery-item {
+    min-width: 100% !important;
+    height: 400px !important;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .crisis-banners {
+    flex-direction: column;
+    gap: 0;
+  }
   .crisis-banner {
     width: 100%;
+    height: 250px !important;
+    padding: 2rem !important;
+    border-right: none !important;
+    border-bottom: 2px solid rgba(255,255,255,0.05);
+  }
+  .crisis-banner h4 {
+    font-size: 1.4rem !important;
+    margin-bottom: 1rem !important;
   }
 }
 
