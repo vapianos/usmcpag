@@ -1796,6 +1796,7 @@ body::after {
 }
 
 .tactical-org-container:has(.node-tl:hover) .path-tl,
+.tactical-org-container:has(.node-tc:hover) .path-tc,
 .tactical-org-container:has(.node-tr:hover) .path-tr,
 .tactical-org-container:has(.node-bl:hover) .path-bl,
 .tactical-org-container:has(.node-bc:hover) .path-bc,
@@ -1903,6 +1904,7 @@ body::after {
 }
 
 .node-tl { grid-column: 1; grid-row: 1; }
+.node-tc { grid-column: 2; grid-row: 1; }
 .node-tr { grid-column: 3; grid-row: 1; }
 .node-bl { grid-column: 1; grid-row: 3; }
 .node-bc { grid-column: 2; grid-row: 3; }
@@ -1938,7 +1940,7 @@ body::after {
     margin: 0 auto;
     box-sizing: border-box;
   }
-  .node-tl, .node-tr, .node-bl, .node-bc, .node-br {
+  .node-tl, .node-tc, .node-tr, .node-bl, .node-bc, .node-br {
     grid-column: auto !important;
     grid-row: auto !important;
   }
@@ -1957,6 +1959,16 @@ body::after {
     padding: 0 !important;
     width: 100%;
     text-align: center;
+  }
+  .bento-content {
+    transform: translateY(0) !important;
+  }
+  .bento-content p {
+    opacity: 1 !important;
+  }
+  .bento-bg {
+    opacity: 0.6 !important;
+    filter: grayscale(0%) !important;
   }
   .tactical-org-container {
     padding: 1rem 5%;
