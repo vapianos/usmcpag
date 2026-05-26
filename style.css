@@ -1910,36 +1910,67 @@ body::after {
 
 /* ================= MOBILE OPTIMIZATIONS ================= */
 @media (max-width: 900px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden !important;
+  }
   .tactical-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
   }
   .tactical-hub {
-    grid-column: 1;
+    grid-column: auto;
     grid-row: auto;
-    width: 250px;
-    height: 250px;
+    width: 100% !important;
+    max-width: 320px;
+    height: auto;
+    min-height: 250px;
     margin: 0 auto;
+    transform: none !important;
+  }
+  .tactical-node {
+    width: 100% !important;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
   .node-tl, .node-tr, .node-bl, .node-bc, .node-br {
-    grid-column: 1 !important;
+    grid-column: auto !important;
     grid-row: auto !important;
   }
   .grid-lines-svg {
-    display: none;
+    display: none !important;
   }
   .hero-stats {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
+    width: 100%;
+    padding: 2rem 0 !important;
   }
   .stat-item {
     border: none !important;
     padding: 0 !important;
+    width: 100%;
+    text-align: center;
   }
   .tactical-org-container {
-    padding: 1rem;
+    padding: 1rem 5%;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .container {
+    padding: 0 5%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .crisis-banner {
+    width: 100%;
   }
 }
 
