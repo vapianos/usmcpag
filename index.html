@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>USMC CIB | Criminal Investigation Battalion</title>
+  <title>United States Marine Corps</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=4">
-  <link rel="icon" type="image/png" href="images/cib_logo.png">
+  <link rel="icon" type="image/png" href="images/usmc_logo.png">
 </head>
 <body class="loading">
 
@@ -17,29 +17,22 @@
   <div class="loader-overlay" id="loader">
     <div class="loader-bg anim-pan-slow"></div>
     <div class="loader-content">
-      <img src="images/cib_logo.png" alt="CIB Logo" class="loader-logo">
+      <img src="images/usmc_logo.png" alt="USMC Logo" class="loader-logo">
       <div class="loader-bar"><div class="loader-progress"></div></div>
       <div class="loader-text" id="loader-text">ESTABLECIENDO CONEXIÓN SEGURA...</div>
     </div>
   </div>
-
-  <!-- ================= TACTICAL HUD ELEMENTS ================= -->
-  <div class="hud-element hud-top-left"></div>
-  <div class="hud-element hud-top-right"></div>
-  <div class="hud-element hud-bottom-left"></div>
-  <div class="hud-element hud-bottom-right"></div>
-  <div class="hud-grid-overlay"></div>
 
   <!-- ================= HEADER ================= -->
   <header class="site-header" id="header">
     <div class="container site-header__inner">
       <div class="brand">
         <div class="brand__logo glow-hover">
-          <img src="images/cib_logo.png" alt="CIB Logo">
+          <img src="images/usmc_logo.png" alt="USMC Logo">
         </div>
         <div class="brand__text">
-          <span class="brand__title">MARINES</span>
-          <span class="brand__subtitle">CRIMINAL INVESTIGATION BATTALION</span>
+          <span class="brand__title">UNITED STATES</span>
+          <span class="brand__subtitle">MARINE CORPS</span>
         </div>
       </div>
       
@@ -47,7 +40,8 @@
         <a href="#home" class="nav-link active"><span class="nav-num">01</span> INICIO</a>
         <a href="#about" class="nav-link"><span class="nav-num">02</span> MISIÓN</a>
         <a href="#capabilities" class="nav-link"><span class="nav-num">03</span> OPERACIONES</a>
-        <a href="#gallery" class="nav-link"><span class="nav-num">04</span> INTELIGENCIA</a>
+        <a href="#regiments" class="nav-link"><span class="nav-num">04</span> REGIMIENTOS</a>
+        <a href="#gallery" class="nav-link"><span class="nav-num">05</span> INTELIGENCIA</a>
         <button class="btn btn--small pulse-glow" id="nav-apply-btn">POSTULARSE</button>
       </nav>
 
@@ -61,6 +55,7 @@
       <a href="#home" class="mobile-nav-link">INICIO</a>
       <a href="#about" class="mobile-nav-link">MISIÓN</a>
       <a href="#capabilities" class="mobile-nav-link">OPERACIONES</a>
+      <a href="#regiments" class="mobile-nav-link">REGIMIENTOS</a>
       <a href="#gallery" class="mobile-nav-link">INTELIGENCIA</a>
       <a href="#leaders" class="mobile-nav-link">MANDO</a>
       <button class="btn btn--primary btn--small" id="mobile-nav-apply" style="margin-top: 1rem;">POSTULARSE</button>
@@ -75,10 +70,10 @@
       <div class="hero-content">
         <div class="hero-badge reveal-fade">CLASIFICADO // USO OFICIAL</div>
           <h1 class="hero-title reveal-up delay-1">
-            ORDEN, DISCIPLINA<br><span class="text-red">Y JUSTICIA.</span>
+            SEMPER<br><span class="text-red">FIDELIS.</span>
           </h1>
           <p class="hero-desc reveal-up delay-2">
-            Batallón especializado de aplicación de la ley integrado al sistema de inteligencia del Cuerpo de Marines. Proporcionamos capacidades avanzadas de investigación criminal y análisis forense para proteger la fuerza y apoyar las operaciones de combate globales.
+            El Cuerpo de Marines de los Estados Unidos es la fuerza de respuesta rápida élite de la nación, lista para proyectar poder marítimo y ganar las batallas de nuestro país en cualquier entorno global.
           </p>
         <div class="hero-actions reveal-fade delay-2">
           <button class="btn btn--primary cyber-btn" id="hero-apply-btn">
@@ -86,41 +81,41 @@
             <span class="btn__icon">→</span>
           </button>
           <a href="#about" class="btn btn--outline">
-            <span class="btn__text">VER DIRECTIVAS</span>
+            <span class="btn__text">VER MÁS</span>
           </a>
         </div>
       </div>
             <div class="hero-stats reveal-fade delay-3">
           <div class="stat-item float-anim">
-            <div class="stat-num counter" data-target="100" data-suffix="%">0</div>
-            <div class="stat-label">Protección de la Fuerza</div>
+            <div class="stat-num counter" data-target="1775">0</div>
+            <div class="stat-label">Año de Fundación</div>
           </div>
           <div class="stat-item float-anim delay-1">
-            <div class="stat-num counter" data-target="360" data-suffix="°">0</div>
-            <div class="stat-label">Inteligencia Criminal</div>
+            <div class="stat-num counter" data-target="1" data-suffix="st">0</div>
+            <div class="stat-label">Marine Expeditionary Force</div>
           </div>
           <div class="stat-item float-anim delay-2">
-            <div class="stat-num counter" data-target="24" data-suffix="/7">0</div>
-            <div class="stat-label">Despliegue Operativo</div>
+            <div class="stat-num counter" data-target="6">0</div>
+            <div class="stat-label">Regimientos de Élite</div>
           </div>
         </div>
     </div>
   </section>
 
-  <!-- ================= SCROLL MARQUEE ================= -->
+<!-- ================= SCROLL MARQUEE ================= -->
   <div class="marquee-section">
     <div class="marquee-content">
-      <span>CRIMINAL INVESTIGATION BATTALION</span>
+      <span>UNITED STATES MARINE CORPS</span>
       <span class="marquee-dot"></span>
       <span>SEMPER FIDELIS</span>
       <span class="marquee-dot"></span>
-      <span>INVESTIGACIONES PENALES</span>
+      <span>FUERZA EXPEDICIONARIA</span>
       <span class="marquee-dot"></span>
-      <span>SERVICIOS DE PROTECCIÓN</span>
+      <span>INFANTERÍA DE MARINA</span>
       <span class="marquee-dot"></span>
-      <span>EXPLOTACIÓN FORENSE</span>
+      <span>AVIACIÓN TÁCTICA</span>
       <span class="marquee-dot"></span>
-      <span>CRIMINAL INVESTIGATION BATTALION</span>
+      <span>UNITED STATES MARINE CORPS</span>
       <span class="marquee-dot"></span>
       <span>SEMPER FIDELIS</span>
       <span class="marquee-dot"></span>
@@ -133,57 +128,59 @@
     <section class="section" id="about">
       <div class="container">
         <div class="about-grid">
+          
+          <div class="about-image reveal-scale">
+            <div class="image-wrapper hologram-effect">
+              <img src="assets/images/pentagon_hq.png" alt="El Pentágono, Arlington">
+              <div class="image-overlay-box">
+                <div class="box-title">EL PENTÁGONO</div>
+                <div class="box-data">ARLINGTON, VA</div>
+              </div>
+            </div>
+          </div>
+          
           <div class="about-text">
             <div class="section-label reveal-up">02 // LA MISIÓN</div>
             <h2 class="section-title reveal-up">QUIÉNES <span class="text-red">SOMOS</span></h2>
             <div class="about-paragraphs">
               <p class="reveal-up delay-1">
-                El Batallón de Investigación Criminal del Cuerpo de Marines de los Estados Unidos (Marine Corps CID o USMC CID) es un batallón encargado de hacer cumplir la ley que se integra en el sistema de inteligencia del Cuerpo de Marines (Marine Corps Intelligence Activity).
+                Forjados en las batallas más sangrientas de la historia y templados por la adversidad, los Marines somos la élite expedicionaria de la nación. No somos simplemente una fuerza militar; somos una hermandad implacable de guerreros letales listos para responder al caos en cualquier rincón del mundo.
               </p>
               <p class="reveal-up delay-2">
-                Funciona como un batallón especializado que tiene como objetivo investigar crímenes serios contra individuos y propiedades dentro del Cuerpo de Marines estadounidense (USMC).
+                Nuestra misión trasciende el combate. Existimos para romper las líneas enemigas, dominar el conflicto y llevar el peso de la victoria allí donde la diplomacia fracasa. Donde el peligro es absoluto, la respuesta siempre es un Marine.
               </p>
             </div>
             
             <div class="values-list reveal-up delay-3">
               <div class="value-item pulse-border">
-                <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+                <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
                 <div>
-                  <h4>JUSTICIA</h4>
-                  <p>Garantizamos el cumplimiento de la ley mediante investigaciones rigurosas e imparciales.</p>
+                  <h4>HONOR</h4>
+                  <p>El cimiento de nuestro carácter. No es un ideal abstracto, es la exigencia brutal de vivir con integridad total, asumiendo el peso de nuestras acciones frente a Dios, a la nación y a nuestros hermanos.</p>
                 </div>
               </div>
               <div class="value-item pulse-border delay-1">
-                <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+                <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
                 <div>
-                  <h4>INTEGRIDAD</h4>
-                  <p>Mantenemos los más altos estándares éticos en la resolución de delitos graves.</p>
+                  <h4>CORAJE</h4>
+                  <p>La voluntad de acero para avanzar directamente hacia el fuego enemigo. Es la disciplina mental y física que domina el miedo, convirtiéndolo en la agresividad letal necesaria para vencer.</p>
                 </div>
               </div>
               <div class="value-item pulse-border delay-2">
-                <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></div>
+                <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="3"></circle><line x1="12" y1="22" x2="12" y2="8"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path></svg></div>
                 <div>
-                  <h4>INTELIGENCIA</h4>
-                  <p>Transformamos la evidencia y los datos forenses en acciones tácticas decisivas.</p>
+                  <h4>COMPROMISO</h4>
+                  <p>El juramento de sangre que nos une de por vida. Jamás abandonaremos a un Marine caído, jamás nos rendiremos y lucharemos hasta el último aliento por nuestra bandera.</p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div class="about-image reveal-scale">
-            <div class="image-wrapper hologram-effect">
-              <img src="assets/images/intelligence-center.jpg" alt="Centro de Operaciones CIB">
-              <div class="image-overlay-box">
-                <div class="box-title">QUANTICO, VA</div>
-                <div class="box-data">SEDE CENTRAL</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= BENTO GRID CAPABILITIES ================= -->
+      <!-- ================= BENTO GRID CAPABILITIES ================= -->
     <section class="section section--dark" id="capabilities">
       <div class="container">
         <div class="section-header text-center reveal-up">
@@ -193,43 +190,103 @@
         
         <div class="bento-grid">
           <!-- Large Card 1 -->
-          <div class="bento-card bento-large reveal-up group cyber-glitch">
-            <img src="assets/images/cyber-ops.png" alt="Investigación Forense" class="bento-bg">
+          <div class="bento-card bento-large reveal-up group">
+            <img src="assets/images/field-training.jpg" alt="1st Marine Division" class="bento-bg">
             <div class="bento-content">
-              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
-              <h3>INVESTIGACIÓN Y ANÁLISIS FORENSE</h3>
-              <p>Proporcionamos capacidades orgánicas de investigación criminal y análisis forense avanzado para promover el orden, la disciplina y asegurar procedimientos judiciales efectivos.</p>
+              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+              <h3>1.ª DIVISIÓN DE MARINES</h3>
+              <p>La "Vieja Estirpe". La división de infantería en servicio activo más antigua y numerosa del Cuerpo, lista para proyectar fuerza expedicionaria letal en cualquier terreno de combate.</p>
             </div>
           </div>
           
           <!-- Small Card 1 -->
-          <div class="bento-card reveal-up delay-1 group cyber-glitch">
-            <img src="assets/images/field-ops.png" alt="Inteligencia Criminal" class="bento-bg">
+          <div class="bento-card reveal-up delay-1 group">
+            <img src="assets/images/combat-training.jpg" alt="Marine Raider Regiment" class="bento-bg">
             <div class="bento-content">
-              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></div>
-              <h3>INTELIGENCIA CRIMINAL</h3>
-              <p>Identificación, prevención y mitigación de amenazas criminales o terroristas.</p>
+              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
+              <h3>MARINE RAIDER REGIMENT</h3>
+              <p>Fuerzas de operaciones especiales (MARSOC). Especializados en acción directa, reconocimiento de élite y asaltos en ambientes de máxima amenaza global.</p>
             </div>
           </div>
           
           <!-- Small Card 2 -->
-          <div class="bento-card reveal-up delay-2 group cyber-glitch">
-            <img src="assets/images/intelligence.png" alt="Protección de la Fuerza" class="bento-bg">
+          <div class="bento-card reveal-up delay-2 group">
+            <img src="assets/images/tactical_helicopter.png" alt="Marine Aviation" class="bento-bg">
             <div class="bento-content">
-              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
-              <h3>PROTECCIÓN DE LA FUERZA</h3>
-              <p>Protección estratégica de las propiedades y los individuos dentro del Cuerpo de Marines.</p>
+              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
+              <h3>AVIACIÓN TÁCTICA</h3>
+              <p>El poder aéreo del Cuerpo. Combina fuego de apoyo cercano, transporte de asalto y superioridad aérea integrada a la perfección con la infantería.</p>
             </div>
           </div>
           
           <!-- Wide Card -->
-          <div class="bento-card bento-wide reveal-up delay-3 group cyber-glitch">
-            <img src="assets/images/combat-training.jpg" alt="Apoyo Operacional" class="bento-bg" style="object-position: center 30%;">
+          <div class="bento-card bento-wide reveal-up delay-3 group">
+            <img src="assets/images/equipment.jpg" alt="Logistics Regiment" class="bento-bg" style="object-position: center 30%;">
             <div class="bento-content">
-              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
-              <h3>APOYO A OPERACIONES DE COMBATE</h3>
-              <p>Despliegue táctico de capacidades investigativas adaptables tanto a entornos de Unidades de Apoyo como a zonas de despliegue de Fuerzas Militares.</p>
+              <div class="bento-icon icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg></div>
+              <h3>REGIMIENTO LOGÍSTICO</h3>
+              <p>El motor incansable de la guerra. Mantenimiento pesado, despliegue de suministros y apoyo ininterrumpible que garantiza que el Cuerpo no se detenga jamás.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REGIMIENTOS (TACTICAL GRID) ================= -->
+    <section class="section" id="regiments">
+      <div class="container text-center">
+        <div class="section-label reveal-up">04 // ORGANIZACIÓN</div>
+        <h2 class="section-title reveal-up">NUESTROS <span class="text-red">REGIMIENTOS</span></h2>
+        
+        <div class="tactical-org-container reveal-up delay-1">
+          <!-- Ramas curvas tipo árbol conectando los nodos -->
+          <svg class="grid-lines-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <!-- Centro: 50,50. Nodos: 16.66, 50, 83.33 -->
+            <path class="path-tl" d="M 50 50 L 50 33.33 L 16.66 33.33 L 16.66 16.66" vector-effect="non-scaling-stroke"></path>
+            <path class="path-tr" d="M 50 50 L 50 33.33 L 83.33 33.33 L 83.33 16.66" vector-effect="non-scaling-stroke"></path>
+            <path class="path-bl" d="M 50 50 L 50 66.66 L 16.66 66.66 L 16.66 83.33" vector-effect="non-scaling-stroke"></path>
+            <path class="path-bc" d="M 50 50 L 50 83.33" vector-effect="non-scaling-stroke"></path>
+            <path class="path-br" d="M 50 50 L 50 66.66 L 83.33 66.66 L 83.33 83.33" vector-effect="non-scaling-stroke"></path>
+          </svg>
+
+          <div class="tactical-grid">
+            
+            <div class="tactical-node tactical-hub glow-anim">
+              <img src="assets/images/division.png" alt="1st Marine Division Logo">
+              <span>1st Marine Division</span>
+              <p class="node-desc">El corazón palpitante del combate terrestre. La fuerza más veterana y letal, lista para aplastar cualquier resistencia enemiga sin titubear.</p>
+            </div>
+            
+            <div class="tactical-node node-tl">
+              <img src="assets/images/special.png" alt="Special Operations Regiment">
+              <span>Special Operations Regiment</span>
+              <p class="node-desc">Operadores de élite absolutos. Fantasmas en el campo de batalla, especializados en acción directa y misiones críticas en la oscuridad.</p>
+            </div>
+            
+            <div class="tactical-node node-tr">
+              <img src="assets/images/1stregi.png" alt="1st Marine Regiment">
+              <span>1st Marine Regiment</span>
+              <p class="node-desc">La inquebrantable punta de lanza de infantería. Los primeros en cruzar la línea de fuego y los últimos en retirarse.</p>
+            </div>
+            
+            <div class="tactical-node node-bl">
+              <img src="assets/images/aviacion.png" alt="1st Marine Aircraft Wing">
+              <span>1st Marine Aircraft Wing</span>
+              <p class="node-desc">Los amos del cielo. Proporcionan superioridad aérea total y una devastadora lluvia de fuego para proteger a nuestros hermanos en tierra.</p>
+            </div>
+            
+            <div class="tactical-node node-bc">
+              <img src="assets/images/logistic.png" alt="1st Combat Logistics Regiment">
+              <span>1st Combat Logistics Regiment</span>
+              <p class="node-desc">La sangre que mantiene vivo al Cuerpo. Aseguran que nuestra maquinaria de guerra nunca se detenga, sin importar el terreno o el infierno que nos rodee.</p>
+            </div>
+            
+            <div class="tactical-node node-br">
+              <img src="assets/images/intel.png" alt="Marine Corps Intelligence Regiment">
+              <span>Marine Corps Intelligence Regiment</span>
+              <p class="node-desc">Nuestros ojos en la sombra. Recolectan, analizan y explotan sin piedad cada debilidad enemiga antes de que se efectúe el primer disparo.</p>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -239,36 +296,37 @@
     <section class="section" id="gallery">
       <div class="container">
         <div class="section-header reveal-up">
-          <div class="section-label">04 // INTELIGENCIA</div>
+          <div class="section-label">05 // INTELIGENCIA</div>
           <h2 class="section-title">OPERACIONES DE <span class="text-red">CAMPO</span></h2>
         </div>
       </div>
       
       <div class="gallery-track-container reveal-up delay-1">
         <div class="gallery-track">
-          <div class="gallery-item group cyber-glitch">
-            <img src="assets/images/field-training.jpg" alt="Entrenamiento de Campo">
-            <div class="gallery-caption">MANIOBRAS TÁCTICAS</div>
+          <div class="gallery-item group">
+            <img src="assets/images/combat-training.jpg" alt="Entrenamiento de Campo">
+            <div class="gallery-caption">INFANTERÍA DE MARINA</div>
           </div>
-          <div class="gallery-item group cyber-glitch">
-            <img src="assets/images/operations-center.jpg" alt="Centro de Operaciones">
-            <div class="gallery-caption">COMANDO Y CONTROL</div>
+          <div class="gallery-item group">
+            <img src="assets/images/field-ops.png" alt="Reconocimiento">
+            <div class="gallery-caption">RECONOCIMIENTO TÁCTICO</div>
           </div>
-          <div class="gallery-item group cyber-glitch">
-            <img src="assets/images/equipment.jpg" alt="Equipo">
-            <div class="gallery-caption">EQUIPO FORENSE</div>
+          <div class="gallery-item group">
+            <img src="assets/images/equipment.jpg" alt="Equipo táctico">
+            <div class="gallery-caption">EQUIPO ESPECIALIZADO</div>
           </div>
-          <div class="gallery-item group cyber-glitch">
+          <div class="gallery-item group">
             <img src="assets/images/training.png" alt="Entrenamiento">
-            <div class="gallery-caption">EVALUACIÓN DE AGENTES</div>
+            <div class="gallery-caption">FORJANDO EL CARÁCTER</div>
           </div>
-          <div class="gallery-item group cyber-glitch">
+          <div class="gallery-item group">
             <img src="assets/images/medals.jpg" alt="Medallas">
-            <div class="gallery-caption">HONOR Y VALOR</div>
+            <div class="gallery-caption">HONOR Y SACRIFICIO</div>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- ================= LEADERSHIP ================= -->
     <section class="section section--dark" id="leaders">
@@ -280,43 +338,66 @@
         <div class="leadership-grid">
           <div class="leader-profile reveal-up">
             <div class="leader-image-wrap">
-              <img src="assets/images/lancaster.png" alt="Gerard Lancaster" class="leader-img">
+              <img src="assets/images/ocelote.jpg" alt="Ricardo Smith" class="leader-img">
               <div class="leader-overlay">
-                <img src="images/cib_logo.png" alt="Logo" class="leader-badge glow-anim">
+                <img src="images/usmc_logo.png" alt="Logo" class="leader-badge glow-anim">
               </div>
             </div>
             <div class="leader-info">
-              <div class="leader-rank">SEGUNDO TENIENTE, USMC</div>
-              <h3 class="leader-name">GERARD LANCASTER</h3>
-              <div class="leader-role">Comandante del Regimiento</div>
+              <div class="leader-rank">TENIENTE CORONEL, USMC</div>
+              <h3 class="leader-name">RICARDO SMITH</h3>
             </div>
           </div>
           
           <div class="leader-profile reveal-up delay-1">
             <div class="leader-image-wrap">
-              <img src="assets/images/valbuenita.jpg" alt="Joseph Valbuena" class="leader-img">
+              <img src="assets/images/orozco.jpg" alt="Jhoseph Orozco" class="leader-img">
               <div class="leader-overlay">
-                <img src="images/cib_logo.png" alt="Logo" class="leader-badge glow-anim">
+                <img src="images/usmc_logo.png" alt="Logo" class="leader-badge glow-anim">
               </div>
             </div>
             <div class="leader-info">
-              <div class="leader-rank">OFICIAL TÉCNICO, USMC</div>
-              <h3 class="leader-name">JOSEPH VALBUENA</h3>
-              <div class="leader-role">Segundo Comandante del Regimiento</div>
+              <div class="leader-rank">CAPITÁN, USMC</div>
+              <h3 class="leader-name">JHOSEPH OROZCO</h3>
             </div>
           </div>
           
           <div class="leader-profile reveal-up delay-2">
             <div class="leader-image-wrap">
-              <img src="assets/images/campana.jpg" alt="Mark Quintana" class="leader-img">
+              <img src="assets/images/soliz.jpg" alt="Sebastian Soliz" class="leader-img">
               <div class="leader-overlay">
-                <img src="images/cib_logo.png" alt="Logo" class="leader-badge glow-anim">
+                <img src="images/usmc_logo.png" alt="Logo" class="leader-badge glow-anim">
               </div>
             </div>
             <div class="leader-info">
-              <div class="leader-rank">SARGENTO DE PERSONAL, USMC</div>
-              <h3 class="leader-name">MARK QUINTANA</h3>
-              <div class="leader-role">Director del CIB</div>
+              <div class="leader-rank">PRIMER TENIENTE, USMC</div>
+              <h3 class="leader-name">SEBASTIAN SOLIZ</h3>
+            </div>
+          </div>
+          
+          <div class="leader-profile reveal-up delay-3">
+            <div class="leader-image-wrap">
+              <img src="assets/images/lancaster.png" alt="Gerard Lancaster" class="leader-img">
+              <div class="leader-overlay">
+                <img src="images/usmc_logo.png" alt="Logo" class="leader-badge glow-anim">
+              </div>
+            </div>
+            <div class="leader-info">
+              <div class="leader-rank">SEGUNDO TENIENTE, USMC</div>
+              <h3 class="leader-name">GERARD LANCASTER</h3>
+            </div>
+          </div>
+          
+          <div class="leader-profile reveal-up delay-3">
+            <div class="leader-image-wrap">
+              <img src="assets/images/aguilar.jpg" alt="Joel Aguilar" class="leader-img">
+              <div class="leader-overlay">
+                <img src="images/usmc_logo.png" alt="Logo" class="leader-badge glow-anim">
+              </div>
+            </div>
+            <div class="leader-info">
+              <div class="leader-rank">SEGUNDO TENIENTE, USMC</div>
+              <h3 class="leader-name">JOEL AGUILAR</h3>
             </div>
           </div>
         </div>
@@ -360,11 +441,10 @@
           > SECURE_LINK_ESTABLISHED<br>
           > AWAITING_INPUT...
         </div>
-        
         <div class="modal-sidebar-content">
-          <img src="images/cib_logo.png" alt="CIB Logo" class="modal-logo-pulse cyber-glitch-img">
-          <h2 class="cyber-glitch-text">PROGRAMA DE EVALUACIÓN CIB</h2>
-          <p>La principal agencia de investigación policial del Cuerpo de Marines de los Estados Unidos.</p>
+          <img src="images/usmc_logo.png" alt="USMC Logo" class="modal-logo-pulse cyber-glitch-img">
+          <h2 class="sidebar-main-title">OPOSICIONES<br>UNITED STATES MARINE CORPS</h2>
+          <p class="sidebar-main-desc">El Cuerpo de Marines forja el carácter. Completa el formulario para iniciar el procesamiento de tu solicitud.</p>
           
           <div class="modal-sidebar-badges">
             <div class="badge">
@@ -391,8 +471,8 @@
         <!-- Google Form Iframe -->
         <div class="iframe-wrapper">
           <iframe 
-            src="https://docs.google.com/forms/d/e/1FAIpQLSe14fPfFyPc5xySicDrmed3u1GrbotNBCw4EmzhI0uH9CPTtQ/viewform?embedded=true" 
-            title="Formulario de Solicitud de Evaluación CIB"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc1pC4Vh7xD1GWrU7ldZXLPs739aIrbr3RwYf681yHNQbeLMA/viewform?embedded=true" 
+            title="Formulario de Reclutamiento USMC"
             loading="lazy">
             Cargando…
           </iframe>
@@ -402,36 +482,36 @@
     </div>
   </div>
 
-  <!-- ================= CRISIS BANNERS ================= -->
+  <!-- ================= MOTTO BANNERS ================= -->
   <div class="crisis-banners">
-    <a href="#" class="crisis-banner group cyber-glitch">
-      <img src="assets/images/combat-training.jpg" alt="Crisis" class="crisis-bg">
+    <div class="crisis-banner group">
+      <img src="assets/images/hero-banner.jpg" alt="USMC Motto" class="crisis-bg">
       <div class="crisis-content">
-        <h4>LÍNEA DE CRISIS MILITAR</h4>
-        <div class="phone">MARQUE 988 OPCIÓN 1</div>
+        <h4>SEMPER FIDELIS</h4>
+        <div class="phone">SIEMPRE FIELES</div>
       </div>
-    </a>
-    <a href="#" class="crisis-banner group cyber-glitch">
-      <img src="assets/images/field-training.jpg" alt="OneSource" class="crisis-bg">
+    </div>
+    <div class="crisis-banner group">
+      <img src="assets/images/field-training.jpg" alt="1st MARDIV" class="crisis-bg">
       <div class="crisis-content">
-        <h4>ASISTENCIA MILITAR</h4>
-        <div class="phone">1.800.342.9647</div>
+        <h4>NO BETTER FRIEND</h4>
+        <div class="phone">NO WORSE ENEMY</div>
       </div>
-    </a>
-    <a href="#" class="crisis-banner group cyber-glitch">
-      <img src="assets/images/equipment.jpg" alt="Safe Helpline" class="crisis-bg">
+    </div>
+    <div class="crisis-banner group">
+      <img src="assets/images/combat-training.jpg" alt="MRR" class="crisis-bg">
       <div class="crisis-content">
-        <h4>LÍNEA DE AYUDA SEGURA (DOD)</h4>
-        <div class="phone">877.955.5247</div>
+        <h4>ALWAYS FAITHFUL</h4>
+        <div class="phone">ALWAYS FORWARD</div>
       </div>
-    </a>
-    <a href="#" class="crisis-banner group cyber-glitch">
-      <img src="assets/images/operations-center.jpg" alt="Eagle Eyes" class="crisis-bg">
+    </div>
+    <div class="crisis-banner group">
+      <img src="assets/images/operations-center.jpg" alt="Aviation" class="crisis-bg">
       <div class="crisis-content">
-        <h4>OJOS DE ÁGUILA (USMC)</h4>
-        <div class="phone text-white">OBSERVA. REPORTA. PROTEGE.</div>
+        <h4>DEATH FROM ABOVE</h4>
+        <div class="phone text-white">APOYO AÉREO CERCANO</div>
       </div>
-    </a>
+    </div>
   </div>
 
   <!-- ================= FOOTER ================= -->
@@ -439,10 +519,10 @@
     <div class="container">
       <div class="footer-main">
         <div class="footer-brand">
-          <img src="images/cib_logo.png" alt="CIB Logo" class="footer-logo glow-hover">
+          <img src="images/usmc_logo.png" alt="USMC Logo" class="footer-logo glow-hover">
           <div class="footer-brand-text">
-            <h3>UNITED STATES MARINE CORPS</h3>
-            <p>CRIMINAL INVESTIGATION BATTALION</p>
+            <h3>UNITED STATES<br><span style="color: var(--c-light-gray); font-size: 0.9rem;">MARINE CORPS</span></h3>
+            <p>OFICIAL</p>
           </div>
         </div>
         
@@ -474,3 +554,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
