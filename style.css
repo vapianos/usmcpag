@@ -1908,4 +1908,39 @@ body::after {
 .node-bc { grid-column: 2; grid-row: 3; }
 .node-br { grid-column: 3; grid-row: 3; }
 
+/* ================= MOBILE OPTIMIZATIONS ================= */
+@media (max-width: 900px) {
+  .tactical-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+  }
+  .tactical-hub {
+    grid-column: 1;
+    grid-row: auto;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  .node-tl, .node-tr, .node-bl, .node-bc, .node-br {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+  .grid-lines-svg {
+    display: none;
+  }
+  .hero-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .stat-item {
+    border: none !important;
+    padding: 0 !important;
+  }
+  .tactical-org-container {
+    padding: 1rem;
+  }
+}
+
 
